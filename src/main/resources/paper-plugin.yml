@@ -1,0 +1,4 @@
+name: Varo2024
+version: '${project.version}'
+main: de.felix.varo2024.Varo2024
+api-version: '1.21'
