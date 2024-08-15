@@ -1,4 +1,9 @@
 name: Varo2024
-version: '${project.version}'
+version: 1.0
 main: de.felix.varo2024.Varo2024
 api-version: '1.21'
+
+commands:
+  varo:
+    description: Alle Varo Commands
+    usage: /varo start <Zeit in Sekunden> | /varo stop | /varo kick <Spieler>
