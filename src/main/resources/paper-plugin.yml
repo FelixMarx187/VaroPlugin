@@ -7,3 +7,21 @@ commands:
   varo:
     description: Alle Varo Commands
     usage: /varo start <Zeit in Sekunden> | /varo stop | /varo kick <Spieler>
+  gm:
+    description: Gamemode Changer
+    usage: /gm <Gamemode>
+  day:
+    description: set time to day
+    usage: /day
+  night:
+    description: set time to night
+    usage: /night
+  midnight:
+    description: set time to midnight
+    usage: /midnight
+  noon:
+    description: set time to noon
+    usage: /noon
+  timer:
+    description: set Timer
+    usage: /timer set <Zeit> | /timer pause | /timer resume | /timer reset

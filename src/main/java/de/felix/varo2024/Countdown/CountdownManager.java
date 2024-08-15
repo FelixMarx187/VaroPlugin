@@ -3,6 +3,7 @@ package de.felix.varo2024.Countdown;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -25,12 +26,14 @@ public class CountdownManager {
             public void run() {
                 if (remainingTime <= 0) {
                     sendTitleToAllPlayers(ChatColor.BOLD + "Varo",ChatColor.LIGHT_PURPLE + "2024");
-
+                    for (Player player : Bukkit.getOnlinePlayers()) {
+                        player.setGameMode(GameMode.SURVIVAL);
+                    }
                     cancelCountdown();
                 } else if (remainingTime <= 5) {
                     sendTitleToAllPlayers(ChatColor.AQUA + String.valueOf(remainingTime),"");
                 } else if (remainingTime % 30 == 0) {
-                    Bukkit.broadcastMessage(Color.AQUA + "Zeit Verbleibend: " + getFormattedTime());
+                    Bukkit.broadcastMessage("§5§lVaro §b§l24 §f| §bZeit Verbleibend: §d§l" + getFormattedTime());
                 }
                 remainingTime--;
             }
