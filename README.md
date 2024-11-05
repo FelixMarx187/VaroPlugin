@@ -18,8 +18,10 @@
 
 ## Key Features
 
-/-CLEAR-/
-
+* Start Commands
+* Faster Daytime Changer
+* Custom Server Prefix
+  
 ## How To Use
 
 Download the plugin
